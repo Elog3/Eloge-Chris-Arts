@@ -1,54 +1,16 @@
-*{
-  padding: 0;
-  margin: 0;
+body{
+  background-color: rgba(85, 83, 83, 0.425);
+
 }
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-
-body {
-    font-family: Arial, sans-serif;
-    background-image: url(4.JPG);
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
- 
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 10px; /* Adjust the gap between photos as needed */
   }
   
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-main {
-    max-width: 3000px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-
-  .picture {
-    margin: 10px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px #161616;
-    width: calc(33.33% - 20px);
-  }
-  
-  .picture img {
+  .photo-grid img {
     width: 100%;
     height: auto;
+
   }
   
-  .picture h3 {
-    margin: 0;
-    font-size: 20px;
-  }
-.picture-gallery{
-  display: flex;
-}
- 
