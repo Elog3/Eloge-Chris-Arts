@@ -9,8 +9,8 @@
     <title>Gallery</title>
 </head>
 <body>
-
 <style>
+<<<<<<< HEAD
     button{
         border: rgba(13, 153, 83, 0.575);
         background-color: rgba(27, 141, 135, 0.692);
@@ -35,6 +35,8 @@
 
 <style>
    
+=======
+>>>>>>> a41ff4086047fdf81d056576bc55e607932fde5a
    * {
   box-sizing: border-box;
 }
@@ -88,6 +90,29 @@ body {
     max-width: 100%;
   }
 }
+.upper{
+  padding: 1cm;
+}
+.upper a{
+  transition-duration: 0.6s;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(27, 141, 135, 0.692);
+  padding: .3cm;
+  border-radius: 5px;
+}
+.upper a:hover{
+  transition-duration: 0.6s;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(75, 17, 119, 0.692);
+  padding: .3cm;
+  border-radius: 10px;
+}
 
 </style>
 </head>
@@ -99,18 +124,21 @@ body {
         behavior: 'smooth'
         });
   }
+  window.addEventListener("scroll", function () {
+            var header = document.querySelector("button");
+            header.classList.toggle("button_up", window.scrollY > 0);
+  })
 </script>
-<a href="index.html"><button><i class="bi bi-arrow-left" style="color: white; font-weight: bolder;" class="btn"></i> Back</button></a>
-
-
-
+<div class="upper">
+  <a href="index.html"><i class="bi bi-arrow-left"></i> Back</a>
+</div>
 
 
     <center> <h1 style="color: #161616ad;"><b>Welcome to our Picture Store!</b></h1>
         <p style="color: #0c02028e;">We offer a wide range of high-quality pictures for sale.</p>
       </center>
 
-      <div class="row" id="top"> 
+      <div class="row"> 
         <div class="column">
           <img src="images/air.jpg"width:100%">
           <img src="images/bks.jpg" style="width:100%">
@@ -156,8 +184,37 @@ body {
         </div>
       </div>
 
-      <button onclick="topFunction()" id="myBtn" title="Go to top" class="up"><a href="#top">&#8593;</a></button>
-      
-
+      <a href="#top"><button onclick="topFunction()" id="myBtn" title="Go to top" class="up"><i class="bi bi-arrow-up"></i></button></a>
+      <style>
+        .up{
+          transition-duration: 0.6s;
+          position: fixed;
+          right: 1cm;
+          top: 90%;
+          width: .7cm;
+          height: 1cm;
+          display: none;
+        }
+        .button_up{
+          transition-duration: 0.6s;
+          position: fixed;
+          right: 1cm;
+          top: 90%;
+          width: .7cm;
+          height: 1cm;
+          display: block;
+          border: rgba(13, 153, 83, 0.575);
+          background-color: rgba(27, 141, 135, 0.442);
+          padding: .5rem;
+          color: white;
+          border-radius: 5px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        .button_up:hover{
+          background-color: rgba(76, 11, 141, 0.468);
+        }
+      </style>
 </body>
 </html>
