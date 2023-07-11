@@ -23,8 +23,7 @@
         position: relative;
         top: 0.5em;
         margin-left: 1em;
-        
-      
+         
     }
     button:hover{
         background-color: rgba(48, 7, 126, 0.486);
@@ -95,6 +94,14 @@ body {
 </style>
 </head>
 <body>
+<script>
+  function topFunction(){
+   
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+        });
+  }
+</script>
 <a href="index.html"><button><i class="bi bi-arrow-left" style="color: white; font-weight: bolder;" class="btn"></i> Back</button></a>
 
 
@@ -105,8 +112,7 @@ body {
         <p style="color: #0c02028e;">We offer a wide range of high-quality pictures for sale.</p>
       </center>
 
-    
-      <div class="row"> 
+      <div class="row" id="top"> 
         <div class="column">
           <img src="images/air.jpg"width:100%">
           <img src="images/bks.jpg" style="width:100%">
@@ -151,7 +157,9 @@ body {
         </div>  
         </div>
       </div>
-  
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top" class="up"><a href="#top">&#8593;</a></button>
+      
 
 </body>
 </html>
