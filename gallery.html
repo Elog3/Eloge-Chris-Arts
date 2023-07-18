@@ -12,7 +12,7 @@
 </head>
 <body>
 <style>
-    button{
+    #button{
         border: rgba(13, 153, 83, 0.575);
         background-color: rgba(27, 141, 135, 0.692);
         padding: .5rem;
@@ -26,7 +26,7 @@
         margin-left: 1em;
          
     }
-    button:hover{
+    #button:hover{
         background-color: rgba(48, 7, 126, 0.486);
         border-radius: 12px;
         transition-duration: 1s;
@@ -129,7 +129,7 @@ body {
   })
 </script>
 <div class="upper">
-  <a href="index.html"><i class="bi bi-arrow-left"></i> Back</a>
+  <a href="index.html" id="button"><i class="bi bi-arrow-left"></i> Back</a>
 </div>
 
 
@@ -214,14 +214,44 @@ body {
         .button_up:hover{
           background-color: rgba(76, 11, 141, 0.468);
         }
+        #cart{
+          transition-duration: 0.6s;
+          border: none;
+          width: 5cm;
+          height: 1cm;
+          background-color: rgb(255, 0, 0);
+          color: white;
+          margin: .2cm 0;
+          box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+        #cart:hover{
+          transition-duration: 0.6s;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          background-color: rgb(156, 0, 0);
+        }
+        #fav{
+          transition-duration: 0.6s;
+          border: none;
+          width: 5cm;
+          height: 1cm;
+          background-color: rgb(65, 165, 3);
+          color: white;
+          margin: .2cm 0;
+          box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+        #fav:hover{
+          transition-duration: 0.6s;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          background-color: rgb(33, 85, 0);
+        }
       </style>
       <div class="modal fade" id="modal">
         <div class="modal-dialog">
           <div class="modal-content">
             <img src="images/air.jpg" alt="">
-            <div class="btn-group">
-              <a class="btn btn-primary">Add to cart</a>
-              <a class="btn btn-primary">Add to Favorites</a>
+            <div class="btns" style="display: flex; justify-content: space-evenly;">
+              <button id="cart"><i class="bi bi-cart"></i>Add to cart</button>
+              <button id="fav"><i class="bi bi-heart"></i>Add to favorites</button>
             </div>
           </div>
         </div>
