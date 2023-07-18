@@ -140,7 +140,7 @@ body {
       <div class="row"> 
         <div class="column">
           <img src="images/air.jpg"style="width:100%" data-bs-toggle="modal" data-bs-target="#modal">
-          <img src="images/bks.jpg" style="width:100%">
+          <img src="images/bks.jpg" style="width:100%" data-bs-target="#modal1" data-bs-toggle="modal">
           <img src="images/car.jpg" style="width:100%">
           <img src="images/tree.jpg" style="width:100%">
          <img src="images/teeee.jpg" style="width:100%">
@@ -253,6 +253,18 @@ body {
         <div class="modal-dialog">
           <div class="modal-content">
             <img src="images/air.jpg" alt="">
+            <div class="btns" style="display: flex; justify-content: space-evenly;">
+              <button id="cart"><i class="bi bi-cart"></i>Add to cart</button>
+              <button id="fav"><i class="bi bi-heart"></i>Add to favorites</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Iyi ni iyindi modla-->
+      <div class="modal fade" id="modal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <img src="images/bks.jpg" alt="">
             <div class="btns" style="display: flex; justify-content: space-evenly;">
               <button id="cart"><i class="bi bi-cart"></i>Add to cart</button>
               <button id="fav"><i class="bi bi-heart"></i>Add to favorites</button>
