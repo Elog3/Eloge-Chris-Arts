@@ -37,10 +37,10 @@ blockquote, q {
 	quotes: none;
 }
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
 
 table {
 	border-collapse: collapse;
@@ -1843,7 +1843,7 @@ input, select, textarea {
 	form select,
 	form textarea {
 		position: relative;
-		-webkit-appearance: none;
+		--webkit-appearance: none;
 		display: block;
 		border: 0;
 		outline: 0;
@@ -1976,21 +1976,28 @@ input, select, textarea {
 /* Item */
 
 	.item {
-		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
 		margin-bottom: 40px;
+		transition-duration: .6s;
 	}
 
-		.item header {
-			background: #fff;
-			margin: 0;
-			padding: 1em 0 1em 0;
-			font-size: 0.8em;
-		}
+	.item header {
+		background: #fff;
+		margin: 0;
+		padding: 1em 0 1em 0;
+		font-size: 0.8em;
+		transition: 1s;
+	}
 
-			.item header h3 {
-				font-size: 1em;
-			}
-
+	.item header h3 {
+		font-size: 1em;
+	}
+	.item:hover{
+		box-shadow: rgba(0, 0, 0, 0.67) 0px 5px 15px;
+	}
+	.item:hover header{
+		background-color: #dcdcdc;
+		color: white;
+	}
 /* Icons */
 
 	.icon {
@@ -2245,6 +2252,9 @@ input, select, textarea {
 			}
 
 			#main > section.one {
+				display: flex;
+				align-items: center;
+				height: 100vh;
 				background-color: #81918E;
 				background-image: url("../../images/7.webp");
 			}
