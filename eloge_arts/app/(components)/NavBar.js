@@ -1,9 +1,9 @@
-import { img } from '../eloge-arts.ico';
+// import { img } from '../eloge-arts.ico';
  
 
 export const NavBar = () => {
   return (
-    <div className="flex float-left left-0 top-0 w-[45vh] bg-[#222629] h-screen">
+    <div className="flex float-left left-0 top-0 w-[45vh] bg-[#222629] h-screen fixed">
 
         <div className="">
             <span>
