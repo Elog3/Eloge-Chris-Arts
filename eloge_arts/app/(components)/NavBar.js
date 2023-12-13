@@ -1,6 +1,6 @@
 // import { img } from '../eloge-arts.ico';
-import { FaHome,FaOpencart } from "react-icons/fa";
-import { FaTableCells } from "react-icons/fa6";
+import { FaHome,FaOpencart,FaBehance } from "react-icons/fa";
+import { FaTableCells,FaXTwitter,FaInstagram } from "react-icons/fa6";
 import { MdPerson } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 
@@ -29,16 +29,22 @@ export const NavBar = () => {
         </div>
 
 
-        <div className="flex flex-col">
-            <span className="text-white "><FaHome /> Home</span>
-            <span className="text-white"><FaTableCells /> Gallery</span>
-            <span className="text-white"><MdPerson /> About Me</span>
-            <span className="text-white"><IoIosMail /> Contact</span>
-            <span className="text-white"><FaOpencart /> Add to Cart</span>
+        <div className="flex flex-col justify-start top-[120px] pl-10  absolute space-y-8 text-xl">
+            <span className="text-[#41484c] flex flex-row justify-around gap-20  cursor-pointer"><FaHome /> Home</span>
+            <span className="text-[#41484c] flex flex-row justify-around gap-20 cursor-pointer"><FaTableCells /> Gallery</span>
+            <span className="text-[#41484c] flex flex-row justify-around gap-20 cursor-pointer"><MdPerson /> About Me</span>
+            <span className="text-[#41484c] flex flex-row justify-around gap-20 cursor-pointer"><IoIosMail /> Contact</span>
+            <span className=" flex flex-row justify-between gap-20 text-[#41484c] cursor-pointer"><FaOpencart /> Add to Cart</span>
         </div>
 
 
-        <div className=""></div>
+        <div className="flex flex-row  justify-center items-center space-x-4 ml-[4pc]  text-[#41484C] absolute bottom-7 text-3xl">
+
+        <FaXTwitter />
+        <FaInstagram />
+        <FaBehance />
+        <IoIosMail />
+        </div>
         
     </div>
   )
