@@ -3,6 +3,7 @@ import { HomePage } from "./(components)/HomePage";
 import { Gallery } from "./(components)/Gallery";
 import { About } from "./(components)/About";
 import { Contact } from "./(components)/Contact";
+import { Footer } from "./(components)/Footer";
 
  
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
        <Gallery />
        <About />
        <Contact />
+       <Footer/>
       </div>
 
 

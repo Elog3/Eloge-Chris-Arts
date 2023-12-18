@@ -1,10 +1,8 @@
  
-// import {styles} from "./home.module.css";
-
 
 export const HomePage = () => {
   return (
-    <section className="">
+    <section className="bg-blue-400">
     <div className=" h-screen">
 {/* bg-home */}
       <p className="text-white flex flex-col justify-center items-center top-[50vh] ">
