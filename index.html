@@ -19,7 +19,7 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/5.jpeg" alt=""/></span>
+							<span class="image avatar48"><img src="eloge-arts.ico" alt=""/></span>
 							<h1 id="title">Eloge Arts</h1>
 							<p>Photographer</p>
 						</div>
@@ -44,12 +44,11 @@
 					<!-- Social Icons -->
 						<ul class="icons">
 							<li><a href="https://twitter.com/ELOG33" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#"class="icon brands fa-whatsapp"><span class="label">whatsapp</span></a></li>
 							<li><a href="https://www.instagram.com/eloge__arts/" class="icon brands fa-instagram"><span class="label">instagram</span></a></li>
-							<li><a href="https://dribbble.com/ELC" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="https://dribbble.com/ELC" class="bi bi-dribbble"><span class="label"></span></a></li>
+							<li><a href="https://behance.com/" class="bi bi-behance"><span class="label"></span></a></li>
 							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-
 				  </div>
 
 			</div>
@@ -67,9 +66,8 @@
 								<p>WELCOME TO OUR WEBSITE ELOGE ARTS WE PROVIDE HIGH QUALITY IMAGES FOR BRANDING & DECORATION<br />
 								</p>
 							</header>
-
 							<footer>
-								<a href="#portfolio" class="button scrolly">Next</a>
+								<a href="#portfolio" class="button scrolly">Get to the <strong>Gallery</strong></a>
 							</footer>
 
 						</div>
@@ -82,60 +80,65 @@
 							<header>
 								<h2>Gallery</h2>
 							</header>
-
 							<p>Discover the essence of Eloge Arts through our diverse galleries, each a visual journey encapsulating unique moments. 
 								our galleries are memories. explore the charm of our lifestyle shots of our nature captures, 
 								where every click resonates with the beauty of the moments.</p>
-
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="gallery.html" class="image fit"><img src="images/arch.png" alt="" /></a>
+										<a href="gallery.html" class="image fit"><img src="images/arch.png" alt="" />
 										<header>
 											<h3>ARCHITECTURAL PHOTOGRAPHY</h3>
 										</header>
+									</a>
 									</article>
 									<article class="item">
-										<a href="gallery.html" class="image fit"><img src="images/6.jpeg" alt="" /></a>
+										<a href="gallery.html" class="image fit"><img src="images/6.jpeg" alt="" />
 										<header>
 											<h3>WILDLIFE PHOTOGRAPHY</h3>
 										</header>
+									</a>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="gallery.html" class="image fit"><img src="images/street.jpg" alt="" /></a>
+										<a href="gallery.html" class="image fit"><img src="images/street.jpg" alt="" />
 										<header>
 											<h3>STREET PHOTOGRAPHY</h3>
 										</header>
+									</a>
 									</article>
 									<article class="item">
-										<a href="gallery.html" class="image fit"><img src="images/fashion.jpg" alt="" /></a>
+										<a href="gallery.html" class="image fit"><img src="images/fashion.jpg" alt="" />
 										<header>
 											<h3>FASHION PHOTOGRAPHY</h3>
 										</header>
+									</a>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="gallery.html" class="image fit"><img src="images/landscape.jpg" alt="" /></a>
+										<a href="gallery.html" class="image fit"><img src="images/landscape.jpg" alt="" />
 										<header>
 											<h3>LANDSCAPE PHOTOGRAPHY</h3>
 										</header>
+									</a>
 									</article>
 
 									<article class="item">
-										<a href="gallery.html" class="image fit"><img src="images/flower.jpg" alt="" /></a>
+										<a href="gallery.html" class="image fit"><img src="images/flower.jpg" alt="" />
 										<header>
 											<h3>MACRO PHOTOGRAPHY</h3>
 										</header>
+									</a>
 									</article>
 
 									<article class="item">
-										<a href="gallery.html" class="image fit"><img src="images/air.jpg" alt="" /></a>
+										<a href="gallery.html" class="image fit"><img src="images/sports.jpg" alt="" />
 										<header>
 											<h3>SPORTS PHOTOGRAPHY</h3>
 										</header>
+									</a>
 									</article>
 									
 								</div>
@@ -151,14 +154,14 @@
 							<header>
 								<h2>About Me</h2>
 							</header>
-
-							<a href="#" class="image featured"><img src="images/mewithcam.jpg" alt="" /></a>
-
+							<div style="display: flex;">
+							<img src="images/mewithcam.jpg" alt="Eloge" width="35%" style="margin-right: 1cm;">
 							<p>Hello, I'm Eloge Chris, the creative eye behind the lens at Eloge Arts. Photography for me is more than just a profession; 
 								it's a passionate journey of storytelling through visuals. With a love for capturing authentic moments, I strive to freeze time and distill emotions into images. Every click is an opportunity to create something meaningful, and I take pride in delivering photographs that tell your unique story. 
 								Welcome to the heart of Eloge Arts, where your story meets my lens.</p>
-
 						</div>
+						</div>
+
 					</section>
 
 				<!-- Contact -->
@@ -211,7 +214,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-			<a href="#top"><button onclick="topFunction()" id="myBtn" title="Go to top" class="up"><i class="bi bi-arrow-up"></i></button></a>
+			<a href="#top" class="button scrolly"><button onclick="topFunction()" id="myBtn" title="Go to top" class="up"><i class="bi bi-arrow-up"></i></button></a>
 			<script>
 				function topFunction(){
 				 
@@ -221,10 +224,9 @@
 				}
 				window.addEventListener("scroll", function () {
 						  var header = document.querySelector("button");
-						  header.classList.toggle("button_up", window.scrollY > 0);
+						  header.classList.toggle("button_up", window.scrollY > 5);
 				})
 
 			  </script>
-
 	</body>
 </html>
