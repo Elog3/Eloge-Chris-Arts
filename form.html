@@ -3,32 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="eloge-arts.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <title>Payment Method</title>
-  <link rel="stylesheet" href="form.css">
+    <style>
+       #map{
+         height: 45vh;
+         width: 30vw;
+       }
+    </style>
+  <!-- <link rel="stylesheet" href="form.css"> -->
 </head>
-<body>
-  <div class="container" class="modal fade" id="pform">
-    <h1>Payment Method</h1>
-    <form id="paymentForm">
-      <div class="form-group">
-        <label for="cardNumber">Card Number</label>
-        <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
-      </div>
-      <div class="form-group">
-        <label for="cardName">Cardholder Name</label>
-        <input type="text" id="cardName" name="cardName" placeholder="Enter cardholder name" required>
-      </div>
-      <div class="form-group">
-        <label for="expiryDate">Expiry Date</label>
-        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
-      </div>
-      <div class="form-group">
-        <label for="cvv">CVV</label>
-        <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
-      </div>
-      <button type="submit">Submit Payment</button>
-    </form>
-  </div>
+<body>  
+
+    <main class="w-[100vw] h-[150vh] grid place-content-center lg:flex lg:flex-row lg:justify-center lg:items-center lg:float-right lg:h-screen lg:w-screen  bg-[#bebcbc] text-black shadow-inner">
+      <div class="flex flex-col items-start justify-start  w-screen lg:h-[75vh] lg:w-[35vw] lg:pl-44 bg-[#F7F7F7] border border-solid border-1 border-gray-400">
+         <h1 class='font-bold w-full relative lg:left-[-90px] top-[0]'>
+          Collaborate With us
+         </h1>
+ 
+         <p class=''>
+           Send email for us,we will respond as soon as possible
+         </p>
+    <form id="contactForm" class='flex flex-col justify-start items-start relative lg:left-[-60px] top-2'>
+      <span class="flex flex-col p-2">
+      <label For="Name">Name</label>
+      <input type="text"
+       name=""
+       id="name"
+       class='w-[271px] h-[29px] border border-solid border-[#d3cece] bg-white'
+       required
+     />
+      
+   </span>
+ 
+   <span class="flex flex-col justify-start items-start p-2">
+     <label html="Email">Email</label>
+      <input type="email" name="" id="email"  class='w-[271px] h-[29px] border border-solid border-[#d3cece] bg-white' required>
+  
+   </span>
+ 
+   <span class="flex flex-col justify-start items-start p-2">
+     <label html="Reason">Reason</label>
+     <input
+       type="text"
+       name=""
+       id="reason"
+       class='w-[271px] h-[29px] border border-solid border-[#d3cece] bg-white'
+       required
+     />
+  
+   </span>
+ 
+   <span class="flex flex-col justify-start items-start p-2">
+     <label html="Message">Message</label>
+     <textarea
+       
+       name=""
+       id="message"
+       cols="28"
+       rows="3"
+       class='border border-solid border-[#d3cece] bg-white'
+       required
+     ></textarea>
+   </span>
+   <button type="submit" class='flex flex-row justify-center items-center border border-solid rounded bg-blue-500 text-white h-10 p-1 m-5 w-44'>
+         send Email
+         <!-- <IoIosSend style={styles} -->
+         
+     </button> 
+ </form>
+         
+ 
+     </div>
+     <div class="flex flex-col p-5 w-screen lg:w-[35vw] h-[75vh] bg-white text-black border border-solid border-1 border-gray-400 shadow-inner">
+     <h1 class='font-bold w-full '>
+          Contact Us
+      </h1>
+  
+        <p class="">
+        We’re open for any suggestion or just to have a chat
+        </p>
+        <div class="grid grid-cols-2">
+           <span class="flex flex-row m-2 font-medium">
+              Kk392st,kicukiro-kigali
+           </span>
+           <span class="flex flex-row flex-auto text-balance font-medium">
+              elogearts3@gmail.com
+           </span>
+           <span class="flex flex-row m-2 font-medium">
+              +250-79163-6954
+           </span>
+           <span class="flex flex-row m-2">
+           
+           <span>
+           <span class="flex flex-row font-medium"> Working Hours</span>
+               <span class='flex flex-col text-sm'>10:00-16:00 hr</span> 
+           </span>
+           </span>
+        </div>
+        <div class="grid grid-cols-2">
+         <span class="flex flex-row ">
+           <p class='flex flex-auto font-bold '>
+             Follow us!
+           </p>
+         </span>
+         <span class="flex flex-row justify-end p-1">
+         <!-- <fa.FaInstagram style={otherIcons}/>
+         <FaXTwitter style={otherIcons}/>
+         <fa.FaDribbble style={otherIcons}/>
+         <BsWhatsapp style={otherIcons}/> -->
+         </span>
+        </div>
+        <div class="flex  overflow-hidden" id="map"> 
+
+        </div>
+     </div>
+     </main>
+    
+     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+     <script src="email.js"></script>
+     <script src="form.js"></script>
 </body>
 </html>
