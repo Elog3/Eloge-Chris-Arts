@@ -1760,7 +1760,7 @@ input, select, textarea {
 				height: 48px;
 			} */
 
-		/* .image.fit {
+		.image.fit {
 			display: block;
 			width: 100%;
 		}
@@ -1784,7 +1784,7 @@ input, select, textarea {
 			.image.centered img {
 				margin: 0 auto;
 				width: auto;
-			} */
+			}
 
 /* List */
 
