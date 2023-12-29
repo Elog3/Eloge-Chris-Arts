@@ -1,8 +1,8 @@
  
 document.addEventListener("DOMContentLoaded", function () {
     
-    var myLatLng = [-1.906945242451, 30.13221579514]; 
-    
+    var myLatLng = [-1.9598149565889007,  30.121233337241737]; 
+
     var map = L.map("map").setView(myLatLng, 12);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
