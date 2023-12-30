@@ -35,7 +35,8 @@ document.getElementById("contactForm").addEventListener("submit", submitForm);
     //reset the form
 
     document.getElementById('contactForm').reset();
-  }
+    document.location('index.html');
+}
 
 const saveMsg = (name, email, reason, message) => {
     var newContactForm = contactFormDB.push();
