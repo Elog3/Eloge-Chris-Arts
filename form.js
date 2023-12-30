@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
     L.marker(myLatLng).addTo(map)
         .bindPopup("Eloge Chris Location!");
 });
-
+function goback() { window.history.back();}
 
  
